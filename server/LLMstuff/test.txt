@@ -1,0 +1,45 @@
+1.Users prompt: "create a event that starts on 3rd october and ends on 4th october 2023, i want a newsletter, 
+countdown, schedule the google meet on 5th october, my event title is 'Nylas AI hackathon' "
+
+2.json: 
+{
+    "Want a website?" : "null",
+    "Google meet?" : "null",
+    "Google meet date and time" : "null",
+    "Newsletter?" : "null",
+    "Countdown?" : "null",
+    "Start date" : "null",
+    "End date" : "null",
+    "Title" : "null",
+    "description" : "null"
+}
+
+3.value format:
+"Want a website?" : "yes" / "no",
+"Google meet?" : "yes" / "no",
+"Google meet date and time" : {
+    "time" : "null"
+    "day" : "null",
+    "month" : "null",
+    "year" : "null"
+},
+"Newsletter?" : "yes" / "no",
+"Countdown?" : "yes" / "no",
+"Start date" : {
+    "day" : "null",
+    "month" : "null",
+    "year" : "null"
+},
+"End date" : {
+    "day" : "null",
+    "month" : "null",
+    "year" : "null"
+},
+"Title" : from user prompt,
+"description" : from user prompt,
+
+4.My requirement: This prompt is used to create a webpage, schedule event,etc. Make sense of the prompt and
+replace the values from null to  givien input using prompt in the json given above, for values that haven't 
+made sense of should stay null. Use value format to determine what vales to put.
+After doing all of that give response of just the updated json and nothing else. Dont explain anything or greet
+at the beginning response should start with '{' and end with '}'
