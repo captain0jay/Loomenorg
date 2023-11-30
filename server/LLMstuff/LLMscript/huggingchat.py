@@ -4,8 +4,8 @@ from hugchat.login import Login
 import json
 
 # Log in to huggingface and grant authorization to huggingchat
-email="captainstorage183@gmail.com"
-passwd="Captainjay@32"
+email=""
+passwd=""
 sign = Login(email, passwd)
 cookies = sign.login()
 
